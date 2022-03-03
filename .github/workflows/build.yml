@@ -67,12 +67,12 @@ jobs:
       - name: See free space
         run: Get-PSDrive
 
-      # Upload everything
-      - name: Upload binaries
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ matrix.msystem }}-packages
-          path: zips/*
+      # # Upload everything
+      # - name: Upload binaries
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: ${{ matrix.msystem }}-packages
+      #     path: zips/*
 
       # Create release
       - name: Create Release
